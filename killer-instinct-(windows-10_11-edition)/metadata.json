@@ -1,0 +1,6 @@
+{
+  "name": "Killer Instinct (Windows 10/11 Edition)",
+  "description": "Fiel recriação e engenharia reversa de Killer Instinct para Windows 10/11 com motor de combate arcade 60 FPS, combos autênticos, suporte a controle e analisador de ROM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #06070a;
+    color: #e2e8f0;
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    overflow-x: hidden;
+  }
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-ki {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+/* CRT Scanline and Screen Effects */
+.crt-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+.arcade-glow {
+  text-shadow: 0 0 8px rgba(234, 88, 12, 0.8), 0 0 20px rgba(220, 38, 38, 0.6);
+}
+
+.blue-glow {
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.8), 0 0 20px rgba(37, 99, 235, 0.6);
+}
+
+.gold-glow {
+  text-shadow: 0 0 8px rgba(250, 204, 21, 0.9), 0 0 25px rgba(234, 179, 8, 0.7);
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d48;
+}
